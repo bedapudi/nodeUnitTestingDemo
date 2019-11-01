@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/bedapudi/nodeUnitTestingDemo/issues"
   },
-  "homepage": "https://github.com/bedapudi/nodeUnitTestingDemo#readme"
+  "homepage": "https://github.com/bedapudi/nodeUnitTestingDemo#readme",
+  "dependencies": {
+    "mocha": "^6.2.2",
+    "sinon": "^7.5.0"
+  }
 }
