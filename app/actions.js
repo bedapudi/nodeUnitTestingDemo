@@ -1,4 +1,5 @@
 var lib = require('./lib')
+var utils = require('./utils')
 
 const actions = {
    /*  add: (a, b) => {return a+b},
@@ -15,6 +16,13 @@ const actions = {
     welcomeMessage: ()=>{
         console.log("i am actions method", lib.sayHi())
         return lib.sayHi()
+    },
+
+    toBeTestedForObjectMocking : () => {
+        let utilObj = new utils()
+        let result = "data is "+ utilObj.getData()
+        console.log("toBeTestedForObjectMocking result is ", result)
+        return result;
     }
     
 }

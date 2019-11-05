@@ -2,6 +2,7 @@ var assert = require('assert');
 var sinon = require('sinon');
 var actions = require('../app/actions')
 var lib = require('../app/lib')
+var utils = require('../app/utils')
 
 /* var now = new Date(2017, 3, 12);
 
@@ -43,6 +44,12 @@ describe("actions", ()=>{
         });
         assert.equal(actions.welcomeMessage(), 'hello')
         lib.sayHi.restore(); // restore original functionality
+        
+    })
+
+    it('object method mocking', ()=> {
+        sinon.stub(utils.prototype, 'getData').callsFake(() => {return 'abc'});
+        assert.equal(actions.toBeTestedForObjectMocking(), 'data is abc')
         
     })
 })
