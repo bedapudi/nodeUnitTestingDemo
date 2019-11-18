@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "jest",
+    "test1": "mocha"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,8 @@
   },
   "homepage": "https://github.com/bedapudi/nodeUnitTestingDemo#readme",
   "dependencies": {
+    "chai": "^4.2.0",
+    "jest": "^24.9.0",
     "mocha": "^6.2.2",
     "sinon": "^7.5.0"
   }

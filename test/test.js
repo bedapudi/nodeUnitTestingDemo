@@ -21,15 +21,15 @@ afterEach(() => {
     clock.restore();
 }); */
 
-/* describe('array', function(){
+describe('array', function(){
     describe('index of', function(){
         it('should return -1 when given value is not present in array', function(){
             assert.equal([1,2,3].indexOf(4), -1)
         })
     })
-}) */
+})
 
-describe("actions", ()=>{
+//describe("actions", ()=>{
     /* it('actions->add', ()=>{
         assert.equal(actions.add(2,2), 4)
     })
@@ -53,9 +53,9 @@ describe("actions", ()=>{
     }) */
 
 
-  var method;
+  //var method;
 
-  beforeEach(function (done) {
+  /* beforeEach(function (done) {
     method = sinon.spy(utils.prototype, 'getData');
     done();
   });
@@ -71,5 +71,5 @@ describe("actions", ()=>{
         console.log("here",method.called)
         //expect(method).to.have.been.called;
         
-    })
-})
+    }) */
+//})

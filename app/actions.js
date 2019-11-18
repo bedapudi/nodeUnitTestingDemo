@@ -2,7 +2,7 @@ var lib = require('./lib')
 var utils = require('./utils')
 
 const actions = {
-   /*  add: (a, b) => {return a+b},
+    add: (a, b) => {return a+b},
     multiply: (a, b) => {return a*b},
     getMonth: () => {
         let month = new Date().getMonth() 
@@ -10,7 +10,7 @@ const actions = {
         return month
     }, 
     noReturnValueFunc: () => {console.log("i am a noReturnValueFunc")},
-    */
+   
 
     //This is the function we are writing the test case.
     welcomeMessage: ()=>{
